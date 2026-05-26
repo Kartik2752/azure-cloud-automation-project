@@ -36,6 +36,7 @@ BASE_DIR = os.path.dirname(
     )
 )
 
+output_dir = os.path.join(BASE_DIR, "outputs")
 # ==========================================
 # OUTPUT DIRECTORY
 # ==========================================
@@ -73,19 +74,6 @@ class Tee:
         for file in self.files:
             file.flush()
 
-# ==========================================
-# START EXECUTION TIMER
-# ==========================================
-
-execution_start = datetime.now()
-start_time = time.time()
-
-print(
-    f"Execution Started At: "
-    f"{execution_start.strftime('%Y-%m-%d %H:%M:%S')}"
-)
-
-print("=" * 50)
 
 # ==========================================
 # OUTPUT STREAM
@@ -115,6 +103,21 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(levelname)s | %(message)s'
 )
+
+
+# ==========================================
+# START EXECUTION TIMER
+# ==========================================
+
+execution_start = datetime.now()
+start_time = time.time()
+
+print(
+    f"Execution Started At: "
+    f"{execution_start.strftime('%Y-%m-%d %H:%M:%S')}"
+)
+
+print("=" * 50)
 
 # ==========================================
 # AZURE CONFIGURATION
@@ -169,10 +172,10 @@ try:
         resource_group
     ):
 
-        logging.info(
-            f"Resource Group already exists: {resource_group}"
-        )
+        print(f"Resource Group already exists: {resource_group}")
 
+        logging.info(f"Resource Group already exists: {resource_group}")
+        
     else:
 
         resource_client.resource_groups.create_or_update(
@@ -182,6 +185,10 @@ try:
             }
         )
 
+        print(
+            f"Resource Group created: {resource_group}"
+        )
+        
         logging.info(
             f"Resource Group created: {resource_group}"
         )
@@ -201,6 +208,7 @@ try:
         }
     ).result()
 
+    print("Virtual Network created")
     logging.info("Virtual Network created")
 
     # ==========================================
@@ -216,6 +224,7 @@ try:
         }
     ).result()
 
+    print("Subnet created")
     logging.info("Subnet created")
 
     # ==========================================
@@ -234,6 +243,7 @@ try:
         }
     ).result()
 
+    print("Public IP created")
     logging.info("Public IP created")
 
     # ==========================================
@@ -248,6 +258,7 @@ try:
         }
     ).result()
 
+    print("NSG created")
     logging.info("NSG created")
 
     # ==========================================
@@ -270,6 +281,7 @@ try:
         }
     ).result()
 
+    print("SSH rule created")
     logging.info("SSH rule created")
 
     # ==========================================
@@ -292,6 +304,7 @@ try:
         }
     ).result()
 
+    print("HTTP rule created")
     logging.info("HTTP rule created")
 
     # ==========================================
@@ -314,6 +327,7 @@ try:
         }
     ).result()
 
+    print("HTTPS rule created")
     logging.info("HTTPS rule created")
 
     # ==========================================
@@ -340,6 +354,7 @@ try:
         }
     ).result()
 
+    print("NIC created")
     logging.info("NIC created")
 
     # ==========================================
@@ -418,7 +433,9 @@ try:
         vm_name,
         vm_parameters
     ).result()
-
+    
+    
+    print("VM created successfully")
     logging.info("VM created successfully")
 
 except Exception as e:
@@ -454,4 +471,4 @@ print(
 
 print("=" * 50)
 
-output_stream.close()
+# output_stream.close()

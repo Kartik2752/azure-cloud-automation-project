@@ -1,13 +1,12 @@
 from azure.identity import AzureCliCredential
 from azure.mgmt.compute import ComputeManagementClient
 from azure.mgmt.monitor import MonitorManagementClient
+from datetime import datetime, timedelta
 
-import datetime
 import logging
 import sys
 import os
 import time
-from datetime import datetime
 
 # ==============================
 # PROJECT PATH CONFIGURATION
@@ -20,6 +19,8 @@ BASE_DIR = os.path.dirname(
         )
     )
 )
+
+output_dir = os.path.join(BASE_DIR, "outputs")
 
 # ==========================================
 # OUTPUT DIRECTORY
@@ -58,19 +59,7 @@ class Tee:
         for file in self.files:
             file.flush()
 
-# ==========================================
-# START EXECUTION TIMER
-# ==========================================
 
-execution_start = datetime.now()
-start_time = time.time()
-
-print(
-    f"Execution Started At: "
-    f"{execution_start.strftime('%Y-%m-%d %H:%M:%S')}"
-)
-
-print("=" * 50)
 
 # ==========================================
 # OUTPUT STREAM
@@ -106,6 +95,20 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s | %(levelname)s | %(message)s'
 )
+
+# ==========================================
+# START EXECUTION TIMER
+# ==========================================
+
+execution_start = datetime.now()
+start_time = time.time()
+
+print(
+    f"Execution Started At: "
+    f"{execution_start.strftime('%Y-%m-%d %H:%M:%S')}"
+)
+
+print("=" * 50)
 
 # ==============================
 # AZURE CONFIGURATION
@@ -178,8 +181,13 @@ try:
     # METRIC COLLECTION TIME
     # ==============================
 
-    end_time = datetime.datetime.utcnow()
-    start_time = end_time - datetime.timedelta(hours=1)
+    # Metric collection time
+
+    metric_end_time = datetime.utcnow()
+
+    metric_start_time = (
+        metric_end_time - timedelta(hours=1)
+    )
 
     resource_id = vm.id
 
@@ -189,7 +197,7 @@ try:
 
     metrics_data = monitor_client.metrics.list(
         resource_id,
-        timespan=f"{start_time}/{end_time}",
+        timespan=f"{metric_start_time}/{metric_end_time}",
         interval='PT1M',
         metricnames='Percentage CPU',
         aggregation='Average'
@@ -290,4 +298,4 @@ print(
 
 print("=" * 50)
 
-output_stream.close()
+# output_stream.close()

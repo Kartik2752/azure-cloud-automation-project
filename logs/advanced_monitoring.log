@@ -1,0 +1,435 @@
+2026-05-26 16:49:54,937 | INFO | Monitoring script started
+2026-05-26 16:49:55,984 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 16:49:55,986 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'd27746c4-58f4-11f1-9ada-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 16:49:56,948 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '2748'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'ETag': '"1"'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23999,Microsoft.Compute/LowCostGetResource;35'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'f5670b76-be88-4b5c-a7fe-2c9332cc1e5c'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 87FBD3686525475BB52613A0926539DE Ref B: PNQ231110909052 Ref C: 2026-05-26T11:19:56Z'
+    'Date': 'Tue, 26 May 2026 11:19:56 GMT'
+2026-05-26 16:49:56,960 | INFO | VM Name: ProductionUbuntuVM
+2026-05-26 16:49:56,960 | INFO | VM Location: centralindia
+2026-05-26 16:49:56,960 | INFO | VM Size: Standard_B2ats_v2
+2026-05-26 16:49:56,960 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/instanceView?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'd38bb661-58f4-11f1-b335-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 16:49:57,098 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '1125'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23998,Microsoft.Compute/LowCostGetResource;34'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '9bc1b7d6-8fcb-4625-ac2e-e38a393b3ca5'
+    'x-ms-operation-identifier': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '248'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: BFB4FAD9BB634B52A841311E9582CB64 Ref B: PNQ231110909052 Ref C: 2026-05-26T11:19:56Z'
+    'Date': 'Tue, 26 May 2026 11:19:56 GMT'
+2026-05-26 16:49:57,101 | INFO | VM Status: Provisioning succeeded
+2026-05-26 16:49:57,102 | INFO | VM Status: VM running
+2026-05-26 16:49:57,102 | ERROR | Monitoring failed: type object 'datetime.datetime' has no attribute 'datetime'
+2026-05-26 17:00:09,660 | INFO | Monitoring script started
+2026-05-26 17:00:10,796 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 17:00:10,798 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '40dd50a8-58f6-11f1-ae02-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:00:11,612 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '2748'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'ETag': '"1"'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23999,Microsoft.Compute/LowCostGetResource;35'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '3c282831-43d8-4d23-9f3b-8add59695f67'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 3F3F2ADEA28A4070A11F81F048398B40 Ref B: PNQ231110906042 Ref C: 2026-05-26T11:30:10Z'
+    'Date': 'Tue, 26 May 2026 11:30:10 GMT'
+2026-05-26 17:00:11,623 | INFO | VM Name: ProductionUbuntuVM
+2026-05-26 17:00:11,624 | INFO | VM Location: centralindia
+2026-05-26 17:00:11,624 | INFO | VM Size: Standard_B2ats_v2
+2026-05-26 17:00:11,624 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/instanceView?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '41e9e782-58f6-11f1-81b5-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:00:12,091 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '1125'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23998,Microsoft.Compute/LowCostGetResource;34'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '9bd6b8a3-6019-44b8-b6e5-acb39d0626d2'
+    'x-ms-operation-identifier': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 2633931C0BFC42C8B17EA624B3BFE102 Ref B: PNQ231110906042 Ref C: 2026-05-26T11:30:11Z'
+    'Date': 'Tue, 26 May 2026 11:30:11 GMT'
+2026-05-26 17:00:12,094 | INFO | VM Status: Provisioning succeeded
+2026-05-26 17:00:12,095 | INFO | VM Status: VM running
+2026-05-26 17:00:12,835 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 17:00:12,836 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/providers/Microsoft.Insights/metrics?timespan=REDACTED&interval=REDACTED&metricnames=REDACTED&aggregation=REDACTED&api-version=2024-02-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '4231ec1c-58f6-11f1-a8d9-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-monitor/7.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:00:14,599 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '3595'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-subscription-resource-requests': '999'
+    'x-ms-operation-identifier': 'REDACTED'
+    'mise-correlation-id': 'REDACTED'
+    'x-ms-request-id': '1ad38379-9563-47af-a914-056ceeaeb2bb'
+    'x-envoy-upstream-service-time': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: A40F160D0A0343848D9D24DA5A33AAD9 Ref B: PNQ231110906031 Ref C: 2026-05-26T11:30:12Z'
+    'Date': 'Tue, 26 May 2026 11:30:13 GMT'
+2026-05-26 17:00:14,606 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,606 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,606 | INFO | CPU Usage: 0.6%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.2%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.17%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 14.7%
+2026-05-26 17:00:14,607 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 22.51%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 0.24%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 0.18%
+2026-05-26 17:00:14,608 | INFO | CPU Usage: 0.19%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.2%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.72%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.19%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.19%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.18%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 27.95%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.19%
+2026-05-26 17:00:14,609 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,610 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,610 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,610 | INFO | CPU Usage: 0.6%
+2026-05-26 17:00:14,610 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,610 | INFO | CPU Usage: 0.13%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.13%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.15%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.13%
+2026-05-26 17:00:14,611 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,612 | INFO | CPU Usage: 0.17%
+2026-05-26 17:00:14,612 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,612 | INFO | CPU Usage: 0.12%
+2026-05-26 17:00:14,612 | INFO | CPU Usage: 0.13%
+2026-05-26 17:00:14,612 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,612 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,613 | INFO | CPU Usage: 0.14%
+2026-05-26 17:00:14,613 | INFO | Average CPU Usage: 1.62%
+2026-05-26 17:00:14,613 | INFO | Monitoring completed successfully
+2026-05-26 17:03:53,253 | INFO | Monitoring script started
+2026-05-26 17:03:54,361 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 17:03:54,363 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c61f1b2e-58f6-11f1-8f75-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:03:55,368 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '2748'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'ETag': '"1"'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23999,Microsoft.Compute/LowCostGetResource;35'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'ccb1b235-7b92-4078-99e6-42a2fdf44c6c'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 4BCED826116841BBAEA3174CD135599A Ref B: PNQ231110909042 Ref C: 2026-05-26T11:33:54Z'
+    'Date': 'Tue, 26 May 2026 11:33:54 GMT'
+2026-05-26 17:03:55,382 | INFO | VM Name: ProductionUbuntuVM
+2026-05-26 17:03:55,383 | INFO | VM Location: centralindia
+2026-05-26 17:03:55,383 | INFO | VM Size: Standard_B2ats_v2
+2026-05-26 17:03:55,383 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/instanceView?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c748c958-58f6-11f1-9ba8-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:03:55,921 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '1125'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23998,Microsoft.Compute/LowCostGetResource;34'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '4ecb6dc1-1d4d-4ac1-a45e-f4f563c6082a'
+    'x-ms-operation-identifier': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 010CA981BFEF450D95EF5D99C0620E8D Ref B: PNQ231110909042 Ref C: 2026-05-26T11:33:55Z'
+    'Date': 'Tue, 26 May 2026 11:33:54 GMT'
+2026-05-26 17:03:55,924 | INFO | VM Status: Provisioning succeeded
+2026-05-26 17:03:55,925 | INFO | VM Status: VM running
+2026-05-26 17:03:56,686 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 17:03:56,686 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/providers/Microsoft.Insights/metrics?timespan=REDACTED&interval=REDACTED&metricnames=REDACTED&aggregation=REDACTED&api-version=2024-02-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'c79b8281-58f6-11f1-819f-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-monitor/7.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:03:57,398 | INFO | Response status: 400
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '247'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-subscription-resource-requests': '999'
+    'x-ms-operation-identifier': 'REDACTED'
+    'mise-correlation-id': 'REDACTED'
+    'x-ms-request-id': '8df74d6f-76b8-4afa-9fd8-a07244cec74d'
+    'x-envoy-upstream-service-time': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 0B6E9630AA98406D967D0B095BD96A5D Ref B: PNQ231110908052 Ref C: 2026-05-26T11:33:56Z'
+    'Date': 'Tue, 26 May 2026 11:33:56 GMT'
+2026-05-26 17:03:57,399 | ERROR | Monitoring failed: (BadRequest) Detected invalid time interval input: 2026-05-26 10:33:55.925260 00:00/2026-05-26 11:33:55.925260 00:00, supported Iso 8601 time interval format: (Datetime/Datetime, Datetime/Duration, Duration/Datetime, Duration)
+Code: BadRequest
+Message: Detected invalid time interval input: 2026-05-26 10:33:55.925260 00:00/2026-05-26 11:33:55.925260 00:00, supported Iso 8601 time interval format: (Datetime/Datetime, Datetime/Duration, Duration/Datetime, Duration)
+2026-05-26 17:04:17,081 | INFO | Monitoring script started
+2026-05-26 17:04:18,116 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 17:04:18,118 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'd450b9d4-58f6-11f1-a865-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:04:18,825 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '2748'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'ETag': '"1"'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23999,Microsoft.Compute/LowCostGetResource;35'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'ca288cbc-81b9-49f7-aab4-b677baf08bd0'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 4A1813E0625548468EA82A5842FC7FD8 Ref B: PNQ231110909025 Ref C: 2026-05-26T11:34:18Z'
+    'Date': 'Tue, 26 May 2026 11:34:18 GMT'
+2026-05-26 17:04:18,837 | INFO | VM Name: ProductionUbuntuVM
+2026-05-26 17:04:18,837 | INFO | VM Location: centralindia
+2026-05-26 17:04:18,837 | INFO | VM Size: Standard_B2ats_v2
+2026-05-26 17:04:18,838 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/instanceView?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'd543bfdf-58f6-11f1-b4cd-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:04:19,306 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '1125'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23998,Microsoft.Compute/LowCostGetResource;34'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': '7509de2b-e70a-4ade-9254-3f0bc265121d'
+    'x-ms-operation-identifier': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 3A5077584D60457DA6838D10155DBBDB Ref B: PNQ231110909025 Ref C: 2026-05-26T11:34:18Z'
+    'Date': 'Tue, 26 May 2026 11:34:18 GMT'
+2026-05-26 17:04:19,310 | INFO | VM Status: Provisioning succeeded
+2026-05-26 17:04:19,311 | INFO | VM Status: VM running
+2026-05-26 17:04:20,044 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-26 17:04:20,044 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/providers/Microsoft.Insights/metrics?timespan=REDACTED&interval=REDACTED&metricnames=REDACTED&aggregation=REDACTED&api-version=2024-02-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'd58c0e84-58f6-11f1-82d9-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-monitor/7.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-26 17:04:22,644 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '3612'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-subscription-resource-requests': '999'
+    'x-ms-operation-identifier': 'REDACTED'
+    'mise-correlation-id': 'REDACTED'
+    'x-ms-request-id': '69faa5bf-ab9f-4a4f-b36a-2dafc3fc5e51'
+    'x-envoy-upstream-service-time': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: BE7443137B3441758721C42AC46A3427 Ref B: PNQ231110906062 Ref C: 2026-05-26T11:34:20Z'
+    'Date': 'Tue, 26 May 2026 11:34:21 GMT'
+2026-05-26 17:04:22,651 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,651 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,651 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,652 | INFO | CPU Usage: 0.17%
+2026-05-26 17:04:22,652 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,652 | INFO | CPU Usage: 14.7%
+2026-05-26 17:04:22,652 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,653 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,653 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,653 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,653 | INFO | CPU Usage: 22.51%
+2026-05-26 17:04:22,653 | INFO | CPU Usage: 0.24%
+2026-05-26 17:04:22,653 | INFO | CPU Usage: 0.18%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.19%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.2%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.72%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.19%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.19%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.18%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 27.95%
+2026-05-26 17:04:22,654 | INFO | CPU Usage: 0.19%
+2026-05-26 17:04:22,655 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,655 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,655 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,655 | INFO | CPU Usage: 0.6%
+2026-05-26 17:04:22,655 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,656 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,656 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,656 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,656 | INFO | CPU Usage: 0.15%
+2026-05-26 17:04:22,656 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,656 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,657 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,657 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,658 | INFO | CPU Usage: 0.17%
+2026-05-26 17:04:22,658 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,658 | INFO | CPU Usage: 0.12%
+2026-05-26 17:04:22,658 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,658 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,659 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,659 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,659 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,659 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,659 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,660 | INFO | CPU Usage: 0.14%
+2026-05-26 17:04:22,660 | INFO | CPU Usage: 0.13%
+2026-05-26 17:04:22,660 | INFO | Average CPU Usage: 1.58%
+2026-05-26 17:04:22,660 | INFO | Monitoring completed successfully

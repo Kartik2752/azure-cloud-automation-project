@@ -1,0 +1,73 @@
+Execution Started At: 2026-05-26 17:04:17
+==================================================
+
+VM INFORMATION
+==================================================
+VM Name : ProductionUbuntuVM
+Location : centralindia
+VM Size : Standard_B2ats_v2
+
+VM STATUS
+==================================================
+Provisioning succeeded
+VM running
+C:\Users\acer\Documents\Capgemini_training_program\Sprints\Project 6\Automated Azure Resource Provisioning and Management System\scripts\python\monitor_resources.py:186: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  metric_end_time = datetime.utcnow()
+
+CPU METRICS
+==================================================
+CPU Usage: 0.14%
+CPU Usage: 0.15%
+CPU Usage: 0.14%
+CPU Usage: 0.17%
+CPU Usage: 0.15%
+CPU Usage: 14.7%
+CPU Usage: 0.15%
+CPU Usage: 0.15%
+CPU Usage: 0.15%
+CPU Usage: 0.14%
+CPU Usage: 22.51%
+CPU Usage: 0.24%
+CPU Usage: 0.18%
+CPU Usage: 0.19%
+CPU Usage: 0.2%
+CPU Usage: 0.72%
+CPU Usage: 0.19%
+CPU Usage: 0.19%
+CPU Usage: 0.18%
+CPU Usage: 27.95%
+CPU Usage: 0.19%
+CPU Usage: 0.15%
+CPU Usage: 0.14%
+CPU Usage: 0.14%
+CPU Usage: 0.6%
+CPU Usage: 0.15%
+CPU Usage: 0.13%
+CPU Usage: 0.13%
+CPU Usage: 0.14%
+CPU Usage: 0.15%
+CPU Usage: 0.14%
+CPU Usage: 0.14%
+CPU Usage: 0.13%
+CPU Usage: 0.14%
+CPU Usage: 0.17%
+CPU Usage: 0.14%
+CPU Usage: 0.12%
+CPU Usage: 0.13%
+CPU Usage: 0.14%
+CPU Usage: 0.14%
+CPU Usage: 0.14%
+CPU Usage: 0.13%
+CPU Usage: 0.13%
+CPU Usage: 0.14%
+CPU Usage: 0.14%
+CPU Usage: 0.13%
+
+Average CPU Usage: 1.58%
+
+Monitoring Completed Successfully
+
+==================================================
+Execution Completed At: 2026-05-26 17:04:22
+Execution Time: 5.58 seconds
+==================================================

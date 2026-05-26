@@ -14,6 +14,8 @@ BASE_DIR = os.path.dirname(
     )
 )
 
+output_dir = os.path.join(BASE_DIR, "outputs")
+
 # ==========================================
 # OUTPUT DIRECTORY
 # ==========================================
@@ -51,19 +53,7 @@ class Tee:
         for file in self.files:
             file.flush()
 
-# ==========================================
-# START EXECUTION TIMER
-# ==========================================
 
-execution_start = datetime.now()
-start_time = time.time()
-
-print(
-    f"Execution Started At: "
-    f"{execution_start.strftime('%Y-%m-%d %H:%M:%S')}"
-)
-
-print("=" * 50)
 
 # ==========================================
 # OUTPUT STREAM
@@ -90,6 +80,20 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s %(levelname)s %(message)s'
 )
+
+# ==========================================
+# START EXECUTION TIMER
+# ==========================================
+
+execution_start = datetime.now()
+start_time = time.time()
+
+print(
+    f"Execution Started At: "
+    f"{execution_start.strftime('%Y-%m-%d %H:%M:%S')}"
+)
+
+print("=" * 50)
 
 try:
     subscription_id = "a8bd7b1b-b9aa-4283-aec4-2040b847d926"
@@ -143,4 +147,4 @@ print(
 
 print("=" * 50)
 
-output_stream.close()
+# output_stream.close()

@@ -1,0 +1,14 @@
+
+AZURE RESOURCE CLEANUP SYSTEM
+
+1. Delete Specific Resource
+2. Delete Entire Resource Group
+
+Enter your choice (1 or 2): 
+Deleting Resource Group: AutoProjectRG
+Resource Group and all resources deleted successfully
+
+==================================================
+Execution Completed At: 2026-05-26 16:34:07
+Execution Time: 197.42 seconds
+==================================================

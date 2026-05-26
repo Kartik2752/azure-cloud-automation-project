@@ -1,0 +1,17 @@
+Execution Started At: 2026-05-26 16:35:16
+==================================================
+Resource Group created: AutoProjectRG
+Virtual Network created
+Subnet created
+Public IP created
+NSG created
+SSH rule created
+HTTP rule created
+HTTPS rule created
+NIC created
+VM created successfully
+
+==================================================
+Execution Completed At: 2026-05-26 16:36:35
+Execution Time: 78.52 seconds
+==================================================

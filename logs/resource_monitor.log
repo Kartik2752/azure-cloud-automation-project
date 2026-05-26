@@ -1,0 +1,182 @@
+2026-05-24 23:07:39,353 | INFO | Dynamic monitoring started
+2026-05-24 23:07:40,274 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-24 23:07:40,279 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/resources?api-version=2025-04-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '428f1b6e-5797-11f1-8dfe-088fc34e0447'
+    'User-Agent': 'azsdk-python-mgmt-resource/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-24 23:07:41,466 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '2118'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-request-id': 'b75be87e-350d-4b94-a466-1c21ad6a5973'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: CA0C3B3529B14E1CB2A506CFE7B24E35 Ref B: PNQ231110908025 Ref C: 2026-05-24T17:37:39Z'
+    'Date': 'Sun, 24 May 2026 17:37:39 GMT'
+2026-05-24 23:07:41,468 | INFO | Monitoring resource: autoprojectstorage123 | Microsoft.Storage/storageAccounts
+2026-05-24 23:07:42,159 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-24 23:07:42,160 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Storage/storageAccounts/autoprojectstorage123?api-version=2025-08-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '43d19514-5797-11f1-a9f8-088fc34e0447'
+    'User-Agent': 'azsdk-python-mgmt-storage/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-24 23:07:43,026 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '1561'
+    'Content-Type': 'application/json'
+    'Expires': '-1'
+    'x-ms-request-id': 'ef2b8cbd-f7e5-4d99-af8d-c740cc3004f7'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: D49CCD2E261E458A82652EF23804784A Ref B: PNQ231110907034 Ref C: 2026-05-24T17:37:41Z'
+    'Date': 'Sun, 24 May 2026 17:37:41 GMT'
+2026-05-24 23:07:43,031 | INFO | autoprojectstorage123 | Storage Monitoring Successful
+2026-05-24 23:07:43,032 | INFO | Monitoring resource: ProjectPublicIP | Microsoft.Network/publicIPAddresses
+2026-05-24 23:07:43,706 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-24 23:07:43,706 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Network/publicIPAddresses/ProjectPublicIP?api-version=2025-05-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '44c0510a-5797-11f1-930c-088fc34e0447'
+    'User-Agent': 'azsdk-python-mgmt-network/30.2.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-24 23:07:44,575 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '808'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'ETag': 'W/"05cfe98e-c41c-4bc8-87b5-0d4c899e7600"'
+    'x-ms-request-id': '67706877-c634-496e-a492-33a69f30d997'
+    'x-ms-throttle-levels': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-arm-service-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 52B0F1B526C4430F8CF905AF2AC043FE Ref B: PNQ231110906034 Ref C: 2026-05-24T17:37:43Z'
+    'Date': 'Sun, 24 May 2026 17:37:43 GMT'
+2026-05-24 23:07:44,576 | INFO | ProjectPublicIP | Public IP Monitoring Successful
+2026-05-24 23:07:44,576 | INFO | Monitoring resource: ProjectNSG | Microsoft.Network/networkSecurityGroups
+2026-05-24 23:07:44,576 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Network/networkSecurityGroups/ProjectNSG?api-version=2025-05-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '45abe285-5797-11f1-affa-088fc34e0447'
+    'User-Agent': 'azsdk-python-mgmt-network/30.2.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-24 23:07:44,962 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '7043'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'ETag': 'W/"3eea9c92-ab48-4e94-b7a8-be686ebe774d"'
+    'x-ms-request-id': 'dc528c7c-ec5d-4a6a-9369-e4e740d7b297'
+    'x-ms-throttle-levels': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-arm-service-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: F172439A74704F78BDFD37819F3991A9 Ref B: PNQ231110906034 Ref C: 2026-05-24T17:37:43Z'
+    'Date': 'Sun, 24 May 2026 17:37:43 GMT'
+2026-05-24 23:07:44,964 | INFO | ProjectNSG | NSG Monitoring Successful
+2026-05-24 23:07:44,965 | INFO | Monitoring resource: ProjectVNet | Microsoft.Network/virtualNetworks
+2026-05-24 23:07:44,965 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Network/virtualNetworks/ProjectVNet?api-version=2025-05-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '45e72db7-5797-11f1-b97e-088fc34e0447'
+    'User-Agent': 'azsdk-python-mgmt-network/30.2.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-24 23:07:45,075 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '1262'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-request-id': '4b8ac96f-eade-43ab-b9d7-904dbf99ee29'
+    'x-ms-throttle-levels': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-arm-service-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 096C4C290AD34270A1ADB10EBA96D111 Ref B: PNQ231110906034 Ref C: 2026-05-24T17:37:44Z'
+    'Date': 'Sun, 24 May 2026 17:37:43 GMT'
+2026-05-24 23:07:45,075 | INFO | ProjectVNet | VNET Monitoring Successful
+2026-05-24 23:07:45,075 | INFO | Monitoring resource: ProductionUbuntuVMVMNic | Microsoft.Network/networkInterfaces
+2026-05-24 23:07:45,075 | WARNING | ProductionUbuntuVMVMNic | No monitoring handler available
+2026-05-24 23:07:45,075 | INFO | Monitoring resource: ProductionUbuntuVM | Microsoft.Compute/virtualMachines
+2026-05-24 23:07:45,858 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-24 23:07:45,859 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourceGroups/AutoProjectRG/providers/Microsoft.Compute/virtualMachines/ProductionUbuntuVM/instanceView?api-version=2025-11-01'
+Request method: 'GET'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '45f8334e-5797-11f1-ab64-088fc34e0447'
+    'User-Agent': 'azsdk-python-mgmt-compute/38.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-24 23:07:46,405 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '674'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-ratelimit-remaining-resource': 'Microsoft.Compute/LowCostGetSubscriptionMaximum;23999,Microsoft.Compute/LowCostGetResource;35'
+    'x-ms-need-to-refresh-epl-cache': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-request-id': 'd1365db3-231a-4e2d-8874-504a4c47522a'
+    'x-ms-operation-identifier': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-reads': '249'
+    'x-ms-ratelimit-remaining-subscription-global-reads': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 613E29D326F345FC989898AE58AD5CCD Ref B: PNQ231110908023 Ref C: 2026-05-24T17:37:45Z'
+    'Date': 'Sun, 24 May 2026 17:37:44 GMT'
+2026-05-24 23:07:46,408 | INFO | ProductionUbuntuVM | Provisioning succeeded
+2026-05-24 23:07:46,408 | INFO | ProductionUbuntuVM | VM deallocated
+2026-05-24 23:07:46,409 | INFO | Monitoring resource: ProductionUbuntuOSDisk | Microsoft.Compute/disks
+2026-05-24 23:07:46,409 | WARNING | ProductionUbuntuOSDisk | No monitoring handler available
+2026-05-24 23:07:46,409 | INFO | Dynamic monitoring completed successfully

@@ -1,0 +1,6 @@
+2026-05-25 15:55:08,327 | INFO | Scheduler task started
+2026-05-25 15:55:44,642 | INFO | Scheduler task completed successfully
+2026-05-25 15:55:44,643 | INFO | Execution Time: 0:00:36.285995
+2026-05-25 15:55:44,643 | INFO | Script Output: Stopping VM...
+VM Stopped Successfully
+

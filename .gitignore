@@ -11,12 +11,6 @@ __pycache__/
 # Azure Credentials
 .azure/
 
-# Logs
-logs/*.log
-
-# Outputs
-outputs/*.txt
-
 # VS Code
 .vscode/
 
