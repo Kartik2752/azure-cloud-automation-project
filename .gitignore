@@ -1,0 +1,25 @@
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Environment Variables
+.env
+
+# Azure Credentials
+.azure/
+
+# Logs
+logs/*.log
+
+# Outputs
+outputs/*.txt
+
+# VS Code
+.vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
