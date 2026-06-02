@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# ==========================================
+
 # CONFIGURATION
-# ==========================================
+
 deleted_snapshots=0
 deleted_disks=0
 deleted_ips=0
@@ -11,13 +11,13 @@ deleted_vms=0
 
 RESOURCE_GROUP="AutoProjectRG"
 
-echo "======================================="
+echo ".........................."
 echo "AZURE RESOURCE CLEANUP AUTOMATION"
-echo "======================================="
+echo ".........................."
 
-# ==========================================
+
 # DELETE OLD SNAPSHOTS
-# ==========================================
+
 
 echo ""
 echo "Checking Old Snapshots..."
@@ -38,9 +38,9 @@ do
     deleted_snapshots=$((deleted_snapshots + 1))
 done
 
-# ==========================================
+
 # DELETE UNATTACHED DISKS
-# ==========================================
+
 
 echo ""
 echo "Checking Unattached Disks..."
@@ -61,9 +61,9 @@ do
         deleted_disks=$((deleted_disks + 1))
 done
 
-# ==========================================
+
 # DELETE UNUSED PUBLIC IPS
-# ==========================================
+
 
 echo ""
 echo "Checking Unused Public IPs..."
@@ -83,9 +83,9 @@ do
         deleted_ips=$((deleted_ips + 1))
 done
 
-# ==========================================
+
 # DELETE ORPHANED NETWORK INTERFACES
-# ==========================================
+
 
 echo ""
 echo "Checking Orphaned NICs..."
@@ -105,10 +105,10 @@ do
         deleted_nics=$((deleted_nics + 1))
 done
 
-# ==========================================
+
 # OPTIONAL:
 # DELETE DEALLOCATED VMs
-# ==========================================
+
 
 echo ""
 echo "Checking Deallocated VMs..."
@@ -130,9 +130,9 @@ do
 done
 
 echo ""
-echo "======================================="
+echo ".........................."
 echo "CLEANUP COMPLETED SUCCESSFULLY"
-echo "======================================="
+echo ".........................."
 
 echo ""
 echo "============== CLEANUP SUMMARY =============="
@@ -143,4 +143,4 @@ echo "Public IPs Deleted     : $deleted_ips"
 echo "NICs Deleted           : $deleted_nics"
 echo "VMs Deleted            : $deleted_vms"
 
-echo "============================================="
+echo ".........................."

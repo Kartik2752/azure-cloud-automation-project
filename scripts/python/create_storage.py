@@ -16,15 +16,14 @@ BASE_DIR = os.path.dirname(
 
 output_dir = os.path.join(BASE_DIR, "outputs")
 
-# ==========================================
+
 # OUTPUT DIRECTORY
-# ==========================================
+
 
 os.makedirs(output_dir, exist_ok=True)
 
-# ==========================================
 # OUTPUT FILE
-# ==========================================
+
 
 script_name = os.path.splitext(
     os.path.basename(__file__)
@@ -35,9 +34,9 @@ output_file = os.path.join(
     f"{script_name}_output.txt"
 )
 
-# ==========================================
+
 # TEE OUTPUT CLASS
-# ==========================================
+
 
 class Tee:
 
@@ -54,9 +53,9 @@ class Tee:
             file.flush()
 
 
-# ==========================================
+
 # OUTPUT STREAM
-# ==========================================
+
 
 output_stream = open(
     output_file,
@@ -64,9 +63,9 @@ output_stream = open(
     encoding="utf-8"
 )
 
-# ==========================================
+
 # DUPLICATE OUTPUT
-# ==========================================
+
 
 sys.stdout = Tee(sys.stdout, output_stream)
 
@@ -80,9 +79,9 @@ logging.basicConfig(
     format='%(asctime)s %(levelname)s %(message)s'
 )
 
-# ==========================================
+
 # START EXECUTION TIMER
-# ==========================================
+
 
 execution_start = datetime.now()
 start_time = time.time()
@@ -125,9 +124,8 @@ except Exception as e:
     logging.error(f"Error: {e}")
     print("Error occurred")
 
-# ==========================================
 # EXECUTION TIME
-# ==========================================
+
 
 end_time = time.time()
 

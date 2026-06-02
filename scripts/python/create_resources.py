@@ -24,9 +24,9 @@ import os
 import time
 from datetime import datetime
 
-# ==========================================
+
 # LOGGING CONFIGURATION
-# ==========================================
+
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(
@@ -37,15 +37,14 @@ BASE_DIR = os.path.dirname(
 )
 
 output_dir = os.path.join(BASE_DIR, "outputs")
-# ==========================================
+
 # OUTPUT DIRECTORY
-# ==========================================
+
 
 os.makedirs(output_dir, exist_ok=True)
 
-# ==========================================
 # OUTPUT FILE
-# ==========================================
+
 
 script_name = os.path.splitext(
     os.path.basename(__file__)
@@ -56,9 +55,9 @@ output_file = os.path.join(
     f"{script_name}_output.txt"
 )
 
-# ==========================================
+
 # TEE OUTPUT CLASS
-# ==========================================
+
 
 class Tee:
 
@@ -75,9 +74,9 @@ class Tee:
             file.flush()
 
 
-# ==========================================
+
 # OUTPUT STREAM
-# ==========================================
+
 
 output_stream = open(
     output_file,
@@ -85,9 +84,9 @@ output_stream = open(
     encoding="utf-8"
 )
 
-# ==========================================
+
 # DUPLICATE OUTPUT
-# ==========================================
+
 
 sys.stdout = Tee(sys.stdout, output_stream)
 
@@ -105,9 +104,9 @@ logging.basicConfig(
 )
 
 
-# ==========================================
+
 # START EXECUTION TIMER
-# ==========================================
+
 
 execution_start = datetime.now()
 start_time = time.time()
@@ -119,9 +118,9 @@ print(
 
 print("=" * 50)
 
-# ==========================================
+
 # AZURE CONFIGURATION
-# ==========================================
+
 
 subscription_id = "a8bd7b1b-b9aa-4283-aec4-2040b847d926"
 
@@ -139,9 +138,9 @@ nsg_name = "ProjectNSG"
 
 nic_name = "ProductionUbuntuVMNic"
 
-# ==========================================
+
 # AUTHENTICATION
-# ==========================================
+
 
 credential = AzureCliCredential()
 
@@ -164,9 +163,9 @@ try:
 
     logging.info("Infrastructure creation started")
 
-    # ==========================================
+    
     # CHECK / CREATE RESOURCE GROUP
-    # ==========================================
+    
 
     if resource_client.resource_groups.check_existence(
         resource_group
@@ -193,9 +192,9 @@ try:
             f"Resource Group created: {resource_group}"
         )
 
-    # ==========================================
+    
     # VIRTUAL NETWORK
-    # ==========================================
+    
 
     vnet = network_client.virtual_networks.begin_create_or_update(
         resource_group,
@@ -211,9 +210,9 @@ try:
     print("Virtual Network created")
     logging.info("Virtual Network created")
 
-    # ==========================================
+    
     # SUBNET
-    # ==========================================
+    
 
     subnet = network_client.subnets.begin_create_or_update(
         resource_group,
@@ -227,9 +226,9 @@ try:
     print("Subnet created")
     logging.info("Subnet created")
 
-    # ==========================================
+    
     # PUBLIC IP
-    # ==========================================
+    
 
     public_ip = network_client.public_ip_addresses.begin_create_or_update(
         resource_group,
@@ -246,9 +245,9 @@ try:
     print("Public IP created")
     logging.info("Public IP created")
 
-    # ==========================================
+    
     # NETWORK SECURITY GROUP
-    # ==========================================
+    
 
     nsg = network_client.network_security_groups.begin_create_or_update(
         resource_group,
@@ -261,9 +260,9 @@ try:
     print("NSG created")
     logging.info("NSG created")
 
-    # ==========================================
+    
     # SSH RULE
-    # ==========================================
+    
 
     network_client.security_rules.begin_create_or_update(
         resource_group,
@@ -284,9 +283,9 @@ try:
     print("SSH rule created")
     logging.info("SSH rule created")
 
-    # ==========================================
+    
     # HTTP RULE
-    # ==========================================
+    
 
     network_client.security_rules.begin_create_or_update(
         resource_group,
@@ -307,9 +306,9 @@ try:
     print("HTTP rule created")
     logging.info("HTTP rule created")
 
-    # ==========================================
+    
     # HTTPS RULE
-    # ==========================================
+    
 
     network_client.security_rules.begin_create_or_update(
         resource_group,
@@ -330,9 +329,9 @@ try:
     print("HTTPS rule created")
     logging.info("HTTPS rule created")
 
-    # ==========================================
+   
     # NETWORK INTERFACE
-    # ==========================================
+    
 
     nic = network_client.network_interfaces.begin_create_or_update(
         resource_group,
@@ -357,9 +356,9 @@ try:
     print("NIC created")
     logging.info("NIC created")
 
-    # ==========================================
+    
     # VIRTUAL MACHINE
-    # ==========================================
+    
 
     vm_parameters = VirtualMachine(
 
@@ -444,9 +443,9 @@ except Exception as e:
 
     print(f"Error: {e}")
 
-# ==========================================
+
 # EXECUTION TIME
-# ==========================================
+
 
 end_time = time.time()
 

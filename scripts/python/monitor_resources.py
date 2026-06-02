@@ -8,9 +8,9 @@ import sys
 import os
 import time
 
-# ==============================
+
 # PROJECT PATH CONFIGURATION
-# ==============================
+
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(
@@ -22,15 +22,15 @@ BASE_DIR = os.path.dirname(
 
 output_dir = os.path.join(BASE_DIR, "outputs")
 
-# ==========================================
+
 # OUTPUT DIRECTORY
-# ==========================================
+
 
 os.makedirs(output_dir, exist_ok=True)
 
-# ==========================================
+
 # OUTPUT FILE
-# ==========================================
+
 
 script_name = os.path.splitext(
     os.path.basename(__file__)
@@ -41,9 +41,9 @@ output_file = os.path.join(
     f"{script_name}_output.txt"
 )
 
-# ==========================================
+
 # TEE OUTPUT CLASS
-# ==========================================
+
 
 class Tee:
 
@@ -61,9 +61,9 @@ class Tee:
 
 
 
-# ==========================================
+
 # OUTPUT STREAM
-# ==========================================
+
 
 output_stream = open(
     output_file,
@@ -71,9 +71,9 @@ output_stream = open(
     encoding="utf-8"
 )
 
-# ==========================================
+
 # DUPLICATE OUTPUT
-# ==========================================
+
 
 sys.stdout = Tee(sys.stdout, output_stream)
 
@@ -86,9 +86,9 @@ os.makedirs(log_dir, exist_ok=True)
 # Monitoring log file
 log_file = os.path.join(log_dir, 'advanced_monitoring.log')
 
-# ==============================
+
 # LOGGING CONFIGURATION
-# ==============================
+
 
 logging.basicConfig(
     filename=log_file,
@@ -96,9 +96,9 @@ logging.basicConfig(
     format='%(asctime)s | %(levelname)s | %(message)s'
 )
 
-# ==========================================
+
 # START EXECUTION TIMER
-# ==========================================
+
 
 execution_start = datetime.now()
 start_time = time.time()
@@ -110,18 +110,18 @@ print(
 
 print("=" * 50)
 
-# ==============================
+
 # AZURE CONFIGURATION
-# ==============================
+
 
 subscription_id = "a8bd7b1b-b9aa-4283-aec4-2040b847d926"
 
 resource_group = "AutoProjectRG"
 vm_name = "ProductionUbuntuVM"
 
-# ==============================
+
 # MAIN MONITORING LOGIC
-# ==============================
+
 
 try:
 
@@ -139,9 +139,9 @@ try:
         subscription_id
     )
 
-    # ==============================
+    
     # GET VM DETAILS
-    # ==============================
+    
 
     vm = compute_client.virtual_machines.get(
         resource_group,
@@ -159,9 +159,9 @@ try:
     logging.info(f"VM Location: {vm.location}")
     logging.info(f"VM Size: {vm.hardware_profile.vm_size}")
 
-    # ==============================
+    
     # VM STATUS
-    # ==============================
+    
 
     instance_view = compute_client.virtual_machines.instance_view(
         resource_group,
@@ -177,9 +177,9 @@ try:
 
         logging.info(f"VM Status: {status.display_status}")
 
-    # ==============================
+    
     # METRIC COLLECTION TIME
-    # ==============================
+    
 
     # Metric collection time
 
@@ -191,9 +191,9 @@ try:
 
     resource_id = vm.id
 
-    # ==============================
+    
     # CPU METRICS
-    # ==============================
+    
 
     metrics_data = monitor_client.metrics.list(
         resource_id,
@@ -224,9 +224,9 @@ try:
 
                     logging.info(f"CPU Usage: {cpu_usage}%")
 
-    # ==============================
+    
     # CPU ALERT CHECK
-    # ==============================
+    
 
     if cpu_values:
 
@@ -251,17 +251,17 @@ try:
 
         logging.warning("No CPU metrics available")
 
-    # ==============================
+    
     # MONITORING COMPLETED
-    # ==============================
+    
 
     logging.info("Monitoring completed successfully")
 
     print("\nMonitoring Completed Successfully")
 
-# ==============================
+
 # EXCEPTION HANDLING
-# ==============================
+
 
 except Exception as e:
 
@@ -271,9 +271,9 @@ except Exception as e:
 
     print(f"\nERROR: {error_message}")
 
-# ==========================================
+
 # EXECUTION TIME
-# ==========================================
+
 
 end_time = time.time()
 

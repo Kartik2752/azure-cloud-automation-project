@@ -2,20 +2,20 @@ param(
     [string]$Action
 )
 
-# ==========================================
+
 # CONFIGURATION
-# ==========================================
+
 
 $ResourceGroup = "AutoProjectRG"
 $VMName = "ProductionUbuntuVM"
 
-Write-Host "======================================="
+Write-Host "........................"
 Write-Host "AZURE VM MANAGEMENT AUTOMATION"
-Write-Host "======================================="
+Write-Host "........................"
 
-# ==========================================
+
 # START VM
-# ==========================================
+
 
 if ($Action -eq "start") {
 
@@ -28,9 +28,9 @@ if ($Action -eq "start") {
     Write-Host "VM Started Successfully"
 }
 
-# ==========================================
+
 # STOP VM
-# ==========================================
+
 
 elseif ($Action -eq "stop") {
 
@@ -43,9 +43,9 @@ elseif ($Action -eq "stop") {
     Write-Host "VM Stopped Successfully"
 }
 
-# ==========================================
+
 # RESTART VM
-# ==========================================
+
 
 elseif ($Action -eq "restart") {
 
@@ -58,9 +58,9 @@ elseif ($Action -eq "restart") {
     Write-Host "VM Restarted Successfully"
 }
 
-# ==========================================
+
 # VM STATUS
-# ==========================================
+
 
 elseif ($Action -eq "status") {
 
@@ -73,9 +73,9 @@ elseif ($Action -eq "status") {
         --output table
 }
 
-# ==========================================
+
 # INVALID INPUT
-# ==========================================
+
 
 else {
 

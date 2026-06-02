@@ -2034,3 +2034,123 @@ Response headers:
     'Date': 'Tue, 26 May 2026 11:04:05 GMT'
     'Content-Length': '0'
 2026-05-26 16:34:07,024 | INFO | Deleted Resource Group: AutoProjectRG
+2026-05-28 10:37:54,705 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-28 10:37:54,707 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourcegroups/AutoProjectRG/providers/Microsoft.Compute//storageAccounts/autoprojectstorage123?api-version='
+Request method: 'DELETE'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '2eabedfc-5a53-11f1-8722-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-resource/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-28 10:37:55,101 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourcegroups/AutoProjectRG/providers/Microsoft.Compute//storageAccounts/autoprojectstorage123?api-version='
+Request method: 'DELETE'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '2eabedfc-5a53-11f1-8722-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-resource/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-28 10:37:55,610 | INFO | Response status: 400
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '137'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-failure-cause': 'REDACTED'
+    'x-ms-request-id': 'e8efd847-c07e-4d4e-b753-644b6ae05dd9'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: C988DC8D021E4B658B247697EDAA7BCE Ref B: PNQ231110909042 Ref C: 2026-05-28T05:07:55Z'
+    'Date': 'Thu, 28 May 2026 05:07:54 GMT'
+2026-05-28 10:37:55,612 | ERROR | Cleanup failed: (MissingApiVersionParameter) The api-version query parameter (?api-version=) is required for all requests.
+Code: MissingApiVersionParameter
+Message: The api-version query parameter (?api-version=) is required for all requests.
+2026-05-28 10:39:29,399 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-28 10:39:29,399 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourcegroups/AutoProjectRG/providers/Microsoft.Compute//storageAccounts/autoprojectstorage123?api-version=Version%201.0'
+Request method: 'DELETE'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '673f606a-5a53-11f1-9c8c-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-resource/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-28 10:39:30,036 | INFO | Response status: 404
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '157'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-failure-cause': 'REDACTED'
+    'x-ms-request-id': 'cb5aee4e-add1-415a-b59a-2a596189a707'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: D7BD60A417584496B527FBFFDE2DB9C0 Ref B: PNQ231110908062 Ref C: 2026-05-28T05:09:29Z'
+    'Date': 'Thu, 28 May 2026 05:09:29 GMT'
+2026-05-28 10:39:30,037 | ERROR | Cleanup failed: (InvalidResourceType) The resource type could not be found in the namespace 'Microsoft.Compute' for api version 'Version 1.0'.
+Code: InvalidResourceType
+Message: The resource type could not be found in the namespace 'Microsoft.Compute' for api version 'Version 1.0'.
+2026-05-28 10:45:15,063 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-28 10:45:15,064 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourcegroups/AutoProjectRG/providers/Microsoft.Compute//storageAccounts/autoprojectstorage123?api-version=2026-05-26'
+Request method: 'DELETE'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': '353ba98f-5a54-11f1-b436-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-resource/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-28 10:45:16,063 | INFO | Response status: 404
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Length': '156'
+    'Content-Type': 'application/json; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-failure-cause': 'REDACTED'
+    'x-ms-request-id': 'f650f59e-4787-4f6c-8413-2ac0ceb8ea71'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'Strict-Transport-Security': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 75DBAA3847344838A62406237AC92016 Ref B: PNQ231110906062 Ref C: 2026-05-28T05:15:15Z'
+    'Date': 'Thu, 28 May 2026 05:15:15 GMT'
+2026-05-28 10:45:16,065 | ERROR | Cleanup failed: (InvalidResourceType) The resource type could not be found in the namespace 'Microsoft.Compute' for api version '2026-05-26'.
+Code: InvalidResourceType
+Message: The resource type could not be found in the namespace 'Microsoft.Compute' for api version '2026-05-26'.
+2026-05-28 10:48:36,200 | INFO | AzureCliCredential.get_token_info succeeded
+2026-05-28 10:48:36,201 | INFO | Request URL: 'https://management.azure.com/subscriptions/a8bd7b1b-b9aa-4283-aec4-2040b847d926/resourcegroups/AutoProjectRG/providers/Microsoft.Storage//storageAccounts/autoprojectstorage123?api-version=2023-01-01'
+Request method: 'DELETE'
+Request headers:
+    'Accept': 'application/json'
+    'x-ms-client-request-id': 'ad2917fc-5a54-11f1-be8e-4c034fe7e914'
+    'User-Agent': 'azsdk-python-mgmt-resource/25.0.0 Python/3.12.0 (Windows-11-10.0.22621-SP0)'
+    'Authorization': 'REDACTED'
+No body was attached to the request
+2026-05-28 10:48:39,952 | INFO | Response status: 200
+Response headers:
+    'Cache-Control': 'no-cache'
+    'Pragma': 'no-cache'
+    'Content-Type': 'text/plain; charset=utf-8'
+    'Expires': '-1'
+    'x-ms-request-id': 'd107b54d-77ea-4f1c-9140-2dbeb44b8ac2'
+    'Strict-Transport-Security': 'REDACTED'
+    'x-ms-operation-identifier': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-deletes': 'REDACTED'
+    'x-ms-ratelimit-remaining-subscription-global-deletes': 'REDACTED'
+    'x-ms-correlation-request-id': 'REDACTED'
+    'x-ms-routing-request-id': 'REDACTED'
+    'X-Content-Type-Options': 'REDACTED'
+    'X-Cache': 'REDACTED'
+    'X-MSEdge-Ref': 'Ref A: 7865509CC2AD405280033A2B328BACA3 Ref B: PNQ231110907054 Ref C: 2026-05-28T05:18:36Z'
+    'Date': 'Thu, 28 May 2026 05:18:39 GMT'
+    'Content-Length': '0'
+2026-05-28 10:48:39,953 | INFO | Deleted Resource: autoprojectstorage123

@@ -16,15 +16,15 @@ BASE_DIR = os.path.dirname(
 
 output_dir = os.path.join(BASE_DIR, "outputs")
 
-# ==========================================
+
 # OUTPUT DIRECTORY
-# ==========================================
+
 
 os.makedirs(output_dir, exist_ok=True)
 
-# ==========================================
+
 # OUTPUT FILE
-# ==========================================
+
 
 script_name = os.path.splitext(
     os.path.basename(__file__)
@@ -35,9 +35,9 @@ output_file = os.path.join(
     f"{script_name}_output.txt"
 )
 
-# ==========================================
+
 # TEE OUTPUT CLASS
-# ==========================================
+
 
 class Tee:
 
@@ -53,9 +53,9 @@ class Tee:
         for file in self.files:
             file.flush()
 
-# ==========================================
+
 # OUTPUT STREAM
-# ==========================================
+
 
 output_stream = open(
     output_file,
@@ -63,9 +63,9 @@ output_stream = open(
     encoding="utf-8"
 )
 
-# ==========================================
+
 # DUPLICATE OUTPUT
-# ==========================================
+
 
 sys.stdout = Tee(sys.stdout, output_stream)
 
@@ -80,9 +80,9 @@ logging.basicConfig(
 )
 
 
-# ==========================================
+
 # START EXECUTION TIMER
-# ==========================================
+
 
 execution_start = datetime.now()
 start_time = time.time()
@@ -119,9 +119,9 @@ except Exception as e:
     logging.error(f"Error stopping VM: {e}")
     print(f"Error: {e}")
     
-# ==========================================
+
 # EXECUTION TIME
-# ==========================================
+
 
 end_time = time.time()
 

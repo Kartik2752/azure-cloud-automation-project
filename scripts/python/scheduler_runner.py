@@ -6,9 +6,9 @@ import sys
 import time
 from datetime import datetime
 
-# ==========================================
+
 # PROJECT PATHS
-# ==========================================
+
 
 BASE_DIR = os.path.dirname(
     os.path.dirname(
@@ -20,15 +20,15 @@ BASE_DIR = os.path.dirname(
 
 output_dir = os.path.join(BASE_DIR, "outputs")
 
-# ==========================================
+
 # OUTPUT DIRECTORY
-# ==========================================
+
 
 os.makedirs(output_dir, exist_ok=True)
 
-# ==========================================
+
 # OUTPUT FILE
-# ==========================================
+
 
 script_name = os.path.splitext(
     os.path.basename(__file__)
@@ -39,9 +39,9 @@ output_file = os.path.join(
     f"{script_name}_output.txt"
 )
 
-# ==========================================
+
 # TEE OUTPUT CLASS
-# ==========================================
+
 
 class Tee:
 
@@ -58,9 +58,9 @@ class Tee:
             file.flush()
 
 
-# ==========================================
+
 # OUTPUT STREAM
-# ==========================================
+
 
 output_stream = open(
     output_file,
@@ -68,18 +68,18 @@ output_stream = open(
     encoding="utf-8"
 )
 
-# ==========================================
+
 # DUPLICATE OUTPUT
-# ==========================================
+
 
 sys.stdout = Tee(sys.stdout, output_stream)
 
 sys.stderr = Tee(sys.stderr, output_stream)
 
 
-# ==========================================
+
 # START EXECUTION TIMER
-# ==========================================
+
 
 execution_start = datetime.now()
 start_time = time.time()
@@ -91,25 +91,25 @@ print(
 
 print("=" * 50)
 
-# ==========================================
+
 # LOGS DIRECTORY
-# ==========================================
+
 
 logs_dir = os.path.join(BASE_DIR, "logs")
 
 os.makedirs(logs_dir, exist_ok=True)
 
-# ==========================================
+
 # OUTPUTS DIRECTORY
-# ==========================================
+
 
 outputs_dir = os.path.join(BASE_DIR, "outputs")
 
 os.makedirs(outputs_dir, exist_ok=True)
 
-# ==========================================
+
 # LOG FILE
-# ==========================================
+
 
 log_file = os.path.join(
     logs_dir,
@@ -122,24 +122,24 @@ logging.basicConfig(
     format="%(asctime)s | %(levelname)s | %(message)s"
 )
 
-# ==========================================
+
 # STATUS FILE
-# ==========================================
+
 
 status_file = os.path.join(
     outputs_dir,
     "scheduler_status.txt"
 )
 
-# ==========================================
+
 # CURRENT TIME
-# ==========================================
+
 
 current_time = datetime.datetime.now()
 
-# ==========================================
+
 # EXECUTE SCHEDULED TASK
-# ==========================================
+
 
 try:
 
@@ -168,9 +168,9 @@ try:
 
     execution_time = end_time - start_time
 
-    # ==========================================
+    
     # WRITE STATUS FILE
-    # ==========================================
+    
 
     with open(status_file, "w") as file:
 
@@ -179,7 +179,7 @@ try:
         )
 
         file.write(
-            "=============================\n\n"
+            "...............\n\n"
         )
 
         file.write(
@@ -229,7 +229,7 @@ except Exception as e:
         )
 
         file.write(
-            "=============================\n\n"
+            "...............\n\n"
         )
 
         file.write(
@@ -247,9 +247,9 @@ except Exception as e:
 
     print(f"Error: {e}")
 
-# ==========================================
+
 # EXECUTION TIME
-# ==========================================
+
 
 end_time = time.time()
 
