@@ -9,7 +9,7 @@ from datetime import datetime
 
 # PROJECT PATHS
 
-
+ 
 BASE_DIR = os.path.dirname(
     os.path.dirname(
         os.path.dirname(
@@ -82,7 +82,7 @@ sys.stderr = Tee(sys.stderr, output_stream)
 
 
 execution_start = datetime.now()
-start_time = time.time()
+script_start_time = time.time()
 
 print(
     f"Execution Started At: "
@@ -135,7 +135,8 @@ status_file = os.path.join(
 # CURRENT TIME
 
 
-current_time = datetime.datetime.now()
+current_time = datetime.now()
+
 
 
 # EXECUTE SCHEDULED TASK
@@ -147,7 +148,7 @@ try:
         "Scheduler task started"
     )
 
-    start_time = datetime.datetime.now()
+    task_start_time =  datetime.now()
 
     result = subprocess.run(
         [
@@ -164,9 +165,9 @@ try:
         text=True
     )
 
-    end_time = datetime.datetime.now()
+    task_end_time =  datetime.now()
 
-    execution_time = end_time - start_time
+    execution_time = task_end_time - task_start_time
 
     
     # WRITE STATUS FILE
@@ -197,7 +198,7 @@ try:
         )
 
         file.write(
-            "Next Run : Tomorrow 10:00 PM\n"
+            "Next Run : Tomorrow 22:00 \n"
         )
 
     logging.info(
@@ -251,10 +252,10 @@ except Exception as e:
 # EXECUTION TIME
 
 
-end_time = time.time()
+script_end_time = time.time()
 
 execution_time = round(
-    end_time - start_time,
+    script_end_time - script_start_time,
     2
 )
 
